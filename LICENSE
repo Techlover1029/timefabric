@@ -1,21 +1,15 @@
-MIT License
+JNOL Source-Available Professional License 1.0
 
-Copyright (c) 2026 JNAEID
+Copyright (c) 2026 JNOL Industries
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+All rights reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is hereby granted to view and study the source code of TimeFabric for educational and personal reference purposes.  
+Permission is also granted for professional use of the compiled software in live production, broadcast, and media workflows.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+You MAY NOT:
+- Copy, reproduce, or redistribute the source code in any form.
+- Modify, fork, or create derivative works from the source code.
+- Sell or sublicense the source code.
+
+This software is provided "as-is" without any warranty. JNOL Industries retains full ownership and all rights not expressly granted above.
