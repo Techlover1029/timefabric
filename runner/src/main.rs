@@ -1,15 +1,31 @@
-use engine::{ClockManager, FrameRate};
+use engine::graph::Graph;
+use engine::node::{Node, NodeType};
+use std::collections::HashMap;
 
 fn main() {
-    let mut manager = ClockManager::new();
+    let mut graph = Graph::new();
 
-    let _clock1 = manager.create_clock(FrameRate::Fps24);
-    let _clock2 = manager.create_clock(FrameRate::Fps30);
+    let node = Node {
+        id: engine::node::NodeId(0),
+        name: "Timecode Generator".to_string(),
+        node_type: NodeType::TimecodeGenerator,
 
-    loop {
-        manager.tick_all();
-        manager.print_all();
+        // These are COUNTS, not ports
+        inputs: 0,
+        outputs: 1,
 
-        std::thread::sleep(std::time::Duration::from_millis(40));
-    }
+        // Position is split into x / y
+        x: 100.0,
+        y: 100.0,
+
+        // Empty property bag
+        properties: HashMap::new(),
+    };
+
+    graph.add_node(node);
+
+    graph.save_to_file("test_project.tf.json").unwrap();
+
+    let loaded = Graph::load_from_file("test_project.tf.json").unwrap();
+    println!("Loaded {} nodes", loaded.nodes.len());
 }
